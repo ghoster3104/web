@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pizza Website</title>
+    
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+
+<body>
+    <!-- Encabezado del sitio web -->
+    <header class="header">
+        <!-- Logo con enlace a la página de inicio -->
+        <a href="/index.html" class="logo"> <i class="fas fa-pizza-slice"></i> pizza</a>
+        
+        <!-- Barra de navegación con enlaces a otras páginas -->
+        <nav class="navbar">
+            <a href="/index.html">Inicio</a>
+            <a href="/view/menu.html">Menú</a>
+            <a href="/view/galeria.html">Galería</a>
+            <a href="/view/contacto.html">Contacto</a>
+            <a href="/view/presupuestos.html">Presupuestos</a>
+        </nav>
+    </header>
+
+    <!-- Sección de encabezado de contacto -->
+    <div class="heading">
+        <h1>Nuestro Contacto</h1>
+        <p><a href="/index.html">INICIO</a> >>> Contacto</p>
+    </div>
+
+    <!-- Sección de contacto con iconos e información de contacto -->
+    <section class="contact">
+        <div class="icon-container">
+            <!-- Primer icono: número de contacto -->
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>Nuestro número </h3>
+                <p>+666666666</p>
+                <p>+666666666</p>
+            </div>
+
+            <!-- Segundo icono: email de contacto -->
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>Nuestro email</h3>
+                <p>elabdalym@gmail.com</p>
+                <p>elabdalym@gmail.com</p>
+            </div>
+
+            <!-- Tercer icono: ubicación -->
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Ubicación</h3>
+                <p>Agramunt</p>
+            </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="row">
+            <form action="/submit-form" method="POST">
+                <h3>Contacto</h3>
+                <!-- Primer grupo de entradas (nombre y apellido) -->
+                <div class="inputBox">
+                    <input type="text" name="nombre" placeholder="Nombre" class="box" required>
+                    <input type="text" name="apellido" placeholder="Apellido" class="box" required>
+                </div>
+                <!-- Segundo grupo de entradas (número y email) -->
+                <div class="inputBox">
+                    <input type="tel" name="telefono" placeholder="Número de teléfono" class="box" required>
+                    <input type="email" name="email" placeholder="Email" class="box" required>
+                </div>
+                <!-- Entrada de texto para el mensaje -->
+                <textarea name="mensaje" placeholder="Tu mensaje" cols="30" rows="10" required></textarea>
+                <!-- Botón para enviar el formulario -->
+                <input type="submit" value="Enviar mensaje" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección del pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Pizza Website. Todos los derechos reservados.</p>
+            <!-- Enlaces de política y términos de servicio -->
+            <nav class="footer-links">
+                <a href="/politica-privacidad.html">Política de privacidad</a>
+                <a href="/terminos-servicio.html">Términos de servicio</a>
+            </nav>
+            <!-- Enlaces a redes sociales -->
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
